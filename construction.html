@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farnod</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/dark-logo.svg" alt="mep logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="" class="active">home</a></li>
+                    <li><a href="">construction</a></li>
+                    <li><a href="">general supplies</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="green-container">
+        <div class="container">
+            <img src="images/construction.svg" alt="construction">
+            <h3>At Farnod, we provide the best construction services. These range from Architectural Designs, Project Management and Building Services. Our team of professionals offers a high quality output for your needs. </h3>
+        </div>
+    </div>
+
+    <img src="images/projects-completed.svg" alt="completed projects" class="projects-completed">
+
+    <div class="projects-container">
+        <div class="container">
+            <ul>
+               <li>
+                   <div class="project-details">
+                        <img src="images/proj1.png" alt="project image">
+                        <div class="project-content">
+                            <h4>Lorem ipsum is placeholder text</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                   </div>
+               </li> 
+               <li>
+                   <div class="project-details">
+                        <img src="images/proj2.png" alt="project image">
+                        <div class="project-content">
+                            <h4>Lorem ipsum is placeholder text</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                   </div>
+               </li> 
+               <li>
+                   <div class="project-details">
+                        <img src="images/proj3.png" alt="project image">
+                        <div class="project-content">
+                            <h4>Lorem ipsum is placeholder text</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                   </div>
+               </li> 
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#">
+                <img src="images/light-logo.svg" alt="logo" class="logo">
+            </a>
+            <br><br>
+            <a href="">
+                <img src="images/instagram.svg" alt="instagram" class="social-media">
+            </a>
+            <a href="">
+                <img src="images/twitter.svg" alt="twitter">
+            </a>
+            <a href="">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="images/pinterest.svg" alt="pinterest">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+    
+</body>
+</html>
