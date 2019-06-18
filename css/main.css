@@ -194,6 +194,59 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* construction page */
+.green-container {
+    background-color: #0dbf4e;
+    padding: 2em 0;
+}
+
+.green-container img {
+    width: 90px;
+    height: 90px;
+}
+
+.green-container h3 {
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 600;
+    margin: .5em 0 0 0;
+}
+
+img.projects-completed {
+    display: block;
+    margin: 5% auto 0 auto;
+}
+
+.projects-container .container {
+    padding-top: 0;
+}
+
+.project-details img {
+    width: 100%;
+    margin: 0;
+}
+
+.project-content {
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.project-content h4 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 8% 5% 5% 5%;
+}
+
+.project-content p {
+    color: #484848;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 4% 0;
+    padding: 0 4% 8% 4%;
+}
+
 @media only screen and (min-width: 650px) {
     .logo {
         margin-left: .5%;
@@ -209,6 +262,52 @@ nav ul li a:hover {
 
     .gray-container ul {
         display: flex;
+    }
+
+    /* construction page */
+    .green-container {
+        padding: 5% 8%;
+    }
+
+    .green-container img {
+        width: 105px;
+        height: 104px;
+        float: left;
+        margin: 5% 0 0 0;
+    }
+
+    .green-container h3 {
+        margin-left: 22%;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .projects-container {
+        margin-bottom: 4%;
+    }
+
+    .projects-container li div.project-details {
+        display: flex;
+    }
+
+    .projects-container li:nth-child(even) div.project-details {
+        flex-direction: row-reverse;
+    }
+
+    div.project-details img div.project-content {
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+
+    .project-content h4 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .project-content p {
+        font-size: 25px;
+        font-weight: 400;
+        padding: 0 5%;
     }
 }
 
@@ -309,4 +408,12 @@ nav ul li a:hover {
         }
     }
 
+    
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 1em 6em;
+    }
 }
