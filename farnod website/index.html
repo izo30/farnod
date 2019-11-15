@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farnod</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/dark-logo.svg" alt="mep logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="construction.html">Construction</a></li>
+                    <li><a href="">General supplies</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero-section">
+
+        <section>
+            <h1>Architecture and Construction for the Modern Era</h1>
+            <h2>Get beautiful modern designs for your house.</h2>
+
+            <button class="hero-btn">Get Started</button>
+        </section>
+
+    </div>
+
+    <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="construction.html">
+                        <img src="images/construction.svg" alt="construction">
+                        <h2>Construction</h2>
+                        <p>At Farnod Architects & Builders, we approach each and every construction project in a
+                            collaborative, innovative and forward-thinking mindset. We ensure that expectations are
+                            exceeded and that the project is
+                            safely and successfully completed, on-time and within budget. If you have any questions,
+                            please be sure to contact us today</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/general-supplies.svg" alt="genral supplies">
+                        <h2>General Supplies</h2>
+                        <p>Our business model is based on procuring general supplies for institutions that enable them
+                            to carry out their operations.Offering full outsourced procurement & supply services as well
+                            as day to day procurement
+                            services, we provide our clients with reliability, flexibility and expertise within our
+                            specialist industries.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user testimonial picture">
+                        <blockquote>“Working with Farnod is a privilege, they’re so talented. We love the
+                            house. It’s unique and beautiful. It could stand anywhere in the world, in Australia or
+                            Capetown, yet it’s local. Our guests feel they have been transported”</blockquote>
+                        <figcaption>- Jane Doe, Client</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user testimonial picture">
+                        <blockquote>“The architects provided complete design and construction supervision. We described
+                            our living style and they suggested several ideas. We selected one and the project turned
+                            out to be excellent”</blockquote>
+                        <figcaption>- John Doe, Client</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="testimony-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <h3>"Great buildings that move the spirit have always been rare. In every case they are unique,
+                        poetic, products of the heart. Architecture is about experience: not only visual but also what
+                        you can touch, what you can feel."</h3>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user3.png" alt="user testimonial picture">
+
+                        <figcaption>- Jane Doe, Director</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#">
+                <img src="images/light-logo.svg" alt="logo" class="logo">
+            </a>
+            <br><br>
+            <a href="">
+                <img src="images/instagram.svg" alt="instagram" class="social-media">
+            </a>
+            <a href="">
+                <img src="images/twitter.svg" alt="twitter">
+            </a>
+            <a href="">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="images/pinterest.svg" alt="pinterest">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farnod</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/dark-logo.svg" alt="mep logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="" class="active">home</a></li>
+                    <li><a href="construction.html">construction</a></li>
+                    <li><a href="">general supplies</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero-section">
+
+        <section>
+            <h1>Architecture and Construction for the Modern Era</h1>
+            <h2>Get beautiful modern designs for your house.</h2>
+
+            <a href=""><img src="images/hero-button.png" alt="Get Started"></a>
+        </section>
+
+    </div>
+
+    <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="images/construction.svg" alt="construction">
+                        <h2>Construction</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/general-supplies.svg" alt="genral supplies">
+                        <h2>General Supplies</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- Jane Doe, CEO</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- John Doe, Director</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="footer-container">
+            <a href="#">
+                <img src="images/light-logo.svg" alt="logo" class="logo">
+            </a>
+            <br><br>
+            <a href="">
+                <img src="images/instagram.svg" alt="instagram" class="social-media">
+            </a>
+            <a href="">
+                <img src="images/twitter.svg" alt="twitter">
+            </a>
+            <a href="">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="images/pinterest.svg" alt="pinterest">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+    
+</body>
+</html>
