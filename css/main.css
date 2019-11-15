@@ -45,19 +45,18 @@ a:link {
 
 h1 {
     color: #000000;
-    font-size: 33px;
+    font-size: 29px;
     font-weight: 600;
-    line-height: 39px;
+    line-height: 30px;
     text-transform: none;
     margin: 0;
 }
 
 .hero-section {
-    height: 140;
     background: url("../images/hero-background.png");
-    padding: 2em 1.3em;
+    padding: 50px 100px 80px 50px;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-size: inherit;
 }
 
 .hero-section h2 {
@@ -67,19 +66,31 @@ h1 {
     line-height: 24px;
 }
 
-.hero-section img {
-    width: 174px;
-    height: 47px;
-    border-radius: 24px;
-    background-color: #0dbf4e;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.hero-btn {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #0dbf4e;
+    border: 0px;
+    border-radius: 80px;
+    padding: 15px 40px;
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    background: #0fb44c;
 }
 
 .blue-container {
     background-color: #10b5e9;
-    padding: 2em 0;
+    padding: 50px 0px;
+}
+
+.blue-container ul li {
+    padding: 20px;
+    box-shadow: 10px 10px 30px rgba(23, 41, 65, 0.1);
+    border-radius: 11px;
+    background: #21bae9;
 }
 
 .blue-container ul li:first-child {
@@ -87,7 +98,7 @@ h1 {
 }
 
 .blue-container ul li:hover {
-    opacity: 0.7;
+    box-shadow: 10px 10px 100px rgba(17, 29, 46, 0.1);
 }
 
 .blue-container h2 {
@@ -119,6 +130,30 @@ h1 {
     margin-bottom: 2em;
 }
 
+.testimony-container {
+    background: #0DBF4E;
+    padding: 2em 0 2em;
+    color: #FFFFFF;
+}
+
+.testimony-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+.testimony-container h3 {
+    padding: 0px 50px;
+}
+
+.testimony-container img {
+    width: 50%;
+    height: 50%;
+}
+
+.testimony-container figcaption {
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -133,7 +168,7 @@ figcaption {
     background-color: #313131;
     color: #FFF;
     text-align: center;
-    padding: 3em 1.2em;
+    padding: 70px;
 }
 
 .footer-container img {
@@ -197,28 +232,31 @@ nav ul li a:hover {
 /* construction page */
 .green-container {
     background-color: #0dbf4e;
-    padding: 2em 0;
+    padding: 2em 0 1em 0;
+    margin-bottom: 60px;
 }
 
 .green-container img {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
 }
 
 .green-container h3 {
     color: #ffffff;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 600;
-    margin: .5em 0 0 0;
+    line-height: 1.4;
+    padding: 10px 40px 0px 40px;
 }
 
 img.projects-completed {
     display: block;
-    margin: 5% auto 0 auto;
+    margin: 0 auto;
 }
 
 .projects-container .container {
     padding-top: 0;
+    margin-bottom: 30px;
 }
 
 .project-details img {
@@ -236,7 +274,7 @@ img.projects-completed {
     font-size: 24px;
     font-weight: 600;
     margin: 0;
-    padding: 8% 5% 5% 5%;
+    padding: 10% 7%;
 }
 
 .project-content p {
@@ -244,7 +282,7 @@ img.projects-completed {
     font-size: 20px;
     font-weight: 400;
     margin: 0 0 4% 0;
-    padding: 0 4% 8% 4%;
+    padding: 0 7% 10% 7%;
 }
 
 @media only screen and (min-width: 650px) {
@@ -257,33 +295,74 @@ img.projects-completed {
     }
 
     .blue-container ul li {
-        margin: 0 5%;
+        width: 50%;
+        margin: 50px 80px;
+        padding: 50px 0;
+    }
+
+    .blue-container ul li p {
+        padding: 0px 50px;
+        text-align: left;
+    }
+
+    .blue-container ul li h2 {
+        font-weight: 700;
+    }
+
+    .blue-container ul li:first-child {
+        margin-bottom: 50px;
     }
 
     .gray-container ul {
         display: flex;
+        padding: 80px;
+        font-style: italic;
+    }
+
+    .gray-container ul li {
+        width: 50%;
+    }
+
+    .testimony-container ul {
+        display: flex;
+        padding: 80px;
+    }
+
+    .testimony-container ul li:first-child {
+        width: 60%;
+        margin-right: 60px;
+    }
+
+    .testimony-container img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .testimony-container h3 {
+        line-height: 2;
     }
 
     /* construction page */
     .green-container {
         padding: 5% 8%;
+        margin-bottom: 7%;
     }
 
     .green-container img {
-        width: 105px;
-        height: 104px;
+        width: 250px;
+        height: 250px;
         float: left;
-        margin: 5% 0 0 0;
+        margin: 9% 0 0 0;
     }
 
     .green-container h3 {
-        margin-left: 22%;
+        margin-left: 30%;
         text-align: left;
         font-size: 40px;
     }
 
     .projects-container {
-        margin-bottom: 4%;
+        margin-bottom: 6%;
     }
 
     .projects-container li div.project-details {
@@ -302,12 +381,17 @@ img.projects-completed {
     .project-content h4 {
         font-size: 40px;
         font-weight: 600;
+        padding-bottom: 5%;
     }
 
     .project-content p {
         font-size: 25px;
         font-weight: 400;
         padding: 0 5%;
+    }
+
+    .footer-container {
+        padding: 150px;
     }
 }
 
@@ -324,13 +408,19 @@ img.projects-completed {
 
     .hero-section {
         text-align: center;
-        height: 500px;
         background: url("../images/hero-background-desktop.png");
         background-position: center; 
+        background-repeat: no-repeat;
     }
 
     .hero-section section {
-        padding: 8% 5%;
+        padding: 130px 100px 50px 100px;
+    }
+
+    .hero-btn {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 15px 50px;
     }
 
     .hero-section h1 {
@@ -407,9 +497,6 @@ img.projects-completed {
             transform: translateY(20px);
         }
     }
-
-    
-
 }
 
 @media only screen and (min-width: 1024px) {

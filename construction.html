@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Farnod</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -20,9 +22,9 @@
 
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
-                    <li><a href="index.html" class="active">home</a></li>
-                    <li><a href="">construction</a></li>
-                    <li><a href="">general supplies</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="">Construction</a></li>
+                    <li><a href="">General supplies</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,8 +32,10 @@
 
     <div class="green-container">
         <div class="container">
-            <img src="images/construction.svg" alt="construction">
-            <h3>At Farnod, we provide the best construction services. These range from Architectural Designs, Project Management and Building Services. Our team of professionals offers a high quality output for your needs. </h3>
+            <img class="green-container-img" src="images/construction.svg" alt="construction">
+            <h3>At Farnod, we provide the best construction services. These range from Architectural Designs, Project
+                Management and Building Services. Our team of professionals offers a high quality output for your needs.
+            </h3>
         </div>
     </div>
 
@@ -40,33 +44,43 @@
     <div class="projects-container">
         <div class="container">
             <ul>
-               <li>
-                   <div class="project-details">
+                <li>
+                    <div class="project-details">
                         <img src="images/proj1.png" alt="project image">
                         <div class="project-content">
-                            <h4>Lorem ipsum is placeholder text</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4>Lamu Shopping Mall Complex</h4>
+                            <p>The ongoing project involves completing a mega building that will house a shopping mall
+                                at Lamu town. The complex will host several shops including hotels, supermarkets and
+                                banks. This project provides employment opportunities to Lamu residents as a way to get
+                                the community involved.</p>
                         </div>
-                   </div>
-               </li> 
-               <li>
-                   <div class="project-details">
+                    </div>
+                </li>
+                <li>
+                    <div class="project-details">
                         <img src="images/proj2.png" alt="project image">
                         <div class="project-content">
-                            <h4>Lorem ipsum is placeholder text</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4>Nairobi Underground Pathway</h4>
+                            <p>The pathway between two corporates building will enable an easy and safe route between
+                                employees of the corporate. The pathway is large enough to include two lanes and will be
+                                open to the public as well. This will help reduce time taken by the corporate employees
+                                to cross the road as they move in between their corporate buildings.</p>
                         </div>
-                   </div>
-               </li> 
-               <li>
-                   <div class="project-details">
+                    </div>
+                </li>
+                <li>
+                    <div class="project-details">
                         <img src="images/proj3.png" alt="project image">
                         <div class="project-content">
-                            <h4>Lorem ipsum is placeholder text</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4>Sendy Office Complex</h4>
+                            <p>The new Sendy office complex will host offices for the ever growing Sendy Limited. The
+                                building will include offices, dining areas, hostels and conference rooms for the Sendy
+                                employees. The complex will hold offices for more than a thousand employees. It will be
+                                an environmental friendly complex as it has many trees and a large garden will be built
+                                as part of the complex.</p>
                         </div>
-                   </div>
-               </li> 
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -98,17 +112,18 @@
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');
 
-        menu.addEventListener('click', function(e) {
+        menu.addEventListener('click', function (e) {
             nav.classList.toggle('hide-mobile');
             e.preventDefault();
         });
 
-        exit.addEventListener('click', function(e) {
+        exit.addEventListener('click', function (e) {
             nav.classList.add('hide-mobile');
             e.preventDefault();
         });
 
     </script>
-    
+
 </body>
+
 </html>
